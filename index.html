@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida</title>
+    <script>
+        // Ejercicio 1: Mostrar datos al azar
+       
+            // Variables con datos personales al azar
+            let nombre = "Guadalupe";
+            let edad = 24;
+            let ciudad = "Buenos Aires";
+
+            // Mostrar mensaje de bienvenida con datos al azar
+            alert("¡Bienvenido!");
+
+            // Ejercicio 2: Solicitar los datos al usuario
+            nombre = prompt("Ingrese su nombre:");
+            edad = prompt("Ingrese su edad:");
+            ciudad = prompt("Ingrese su ciudad:");
+
+            // Verificar que los datos no sean nulos o vacíos
+            if (nombre && edad && ciudad) {
+                // Mostrar mensaje de bienvenida con los datos ingresados
+                alert("¡Bienvenido, " + nombre + "! Tienes " + edad + " años y vives en " + ciudad + ".");
+
+                // Ejercicio 3: Calcular y mostrar los días vividos
+                let diasVividos = parseInt(edad) * 365;
+                alert("Has vivido aproximadamente " + diasVividos + " días desde que naciste.");
+            } else {
+                alert("No se ingresaron todos los datos necesarios.");
+            }
+        
+    </script>
+</head>
+<body>
+    <h1>Página de Bienvenida</h1>
+    
+</body>
+</html>
